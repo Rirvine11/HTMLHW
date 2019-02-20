@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Study of Weather</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Weather</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id = "navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Cloudy.html">Cloudiness</a>
+                <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="Temperature.html">Temperature</a>
+                <a class="dropdown-item" href="Wind.html">Windiness</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Compare.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="DataTable.html">Data Source</a>
+        </li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+            <h1 class="display-3">Weather Patterns</h1>
+            <p class="lead">A study in to the variance of weather measurements.</p>
+            <hr class="my-4">
+            <p>The purpose of this study was to determine the effect of location on 4 weather measurements (cloudiness, humidity, windiness, and temperature.)</p>
+            <p>This study was conducted by using a number generator to randomly pick 600+ Latitude pairings. Using a Python library I found the nearest</p>
+            <p>city for each of those locations. Using weather data pulled from an API call I was able to find the information for each of the cities. I then</p>
+            <p>plotted the data on to scatter plots. Those plots can be found, witha summary, at the below links.</p>
+            </div>
+
+    <div class="container">
+            <h3 class="text-center">Plots</h3>
+            <div class="row">
+                <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="Plots\Cloudy.png" alt="...">
+                    <div class="caption">
+                    <h3>Cloudiness</h3>
+                    <p>Cloudiness by Latitude</p>
+                    <p><a href="Cloudy.html" class="btn btn-primary" role="button">Inspect</a></p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="Plots\Humidity.png" alt="...">
+                    <div class="caption">
+                    <h3>Humidity</h3>
+                    <p>Humidity by Latitude</p>
+                    <p><a href="Humidity.html" class="btn btn-primary" role="button">Inspect</a></p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        <div class="container">
+                <div class="row">
+            <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="Plots\Temps.png" alt="...">
+                        <div class="caption">
+                        <h3>Temperature</h3>
+                        <p>Temperature by Latitude</p>
+                        <p><a href="Temperature.html" class="btn btn-primary" role="button">Inspect</a></p>
+                        </div>
+                    </div>
+                    </div>
+            <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="Plots\Windy.png" alt="...">
+                        <div class="caption">
+                        <h3>Windiness</h3>
+                        <p>Windiness by Latitude</p>
+                        <p><a href="Wind.html" class="btn btn-primary" role="button">Inspect</a></p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+
+
+</body>
+
+</html>
